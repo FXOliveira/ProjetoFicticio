@@ -1,0 +1,36 @@
+@import 'mixins';
+
+ul{
+	list-style: none;
+
+	.title{
+		@include GetColor(text,$grey-gradient);
+	}
+
+}
+
+.nav-button{
+	a{
+		@include GetColor(background,$green-gradient);
+	}
+}
+
+@media (min-width: $mobile-device){
+	.nav-button{
+		a{
+			@include GetPadding(11px,11px,11px,11px);
+		}
+	}
+
+	h2{
+		@include GetFontSize($mobile,h2);
+	}
+
+	ul{
+		li{
+			@include GetFontSize($mobile,li);
+			@include GetMargin(0,0,0,35px);
+		}
+	}
+
+}
