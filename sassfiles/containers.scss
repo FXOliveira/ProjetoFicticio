@@ -1,0 +1,35 @@
+@import 'mixins';
+@import 'variables';
+
+#company-presentation{
+	@include GetColor(background,$blue-gradient);
+}
+
+footer{
+	@include GetColor(background,black);
+}
+
+header{
+	.navbar{
+		@include GetPadding(30px,0,30px,0);
+	}
+
+	.navbar-toggler{
+		@include GetMargin(0,0,0,40px);
+		@include GetDimension(60px,50px);
+	}
+}
+
+
+@media (min-width: $tablet-device){
+	#company-presentation{
+		@include GetPadding(0,0,40px,0);
+	}
+}
+
+
+@media (min-width: $desktop-device){
+	#company-presentation{
+		@include GetPadding(0,0,90px,0);
+	}
+}

@@ -1,0 +1,16 @@
+@import 'mixins';
+
+
+@media (min-width: $mobile-device){
+	
+	footer{
+		.logo{
+			img{
+				@include GetDimension(auto,110px);
+			}
+		}
+	}
+
+	
+	
+}

@@ -1,0 +1,43 @@
+$font-stack: Helvética Georgia sans-serif;
+
+$mobile-device:320px;
+$tablet-device:768px;
+$desktop-device:1024px;
+
+
+$green-gradient:#40d662;
+$blue-gradient:#6767d6;
+$grey-gradient:#8a8484;
+
+
+$fonts-size:(
+
+	mobile:(
+
+		h2:45px,
+		span:20px,
+		footer-titles:25px
+
+	),
+
+	tablet:(
+
+		h2:55px,
+		span:25px
+
+	),
+
+	desktop:(
+
+		h2:70px,
+		span:25px
+
+	)
+
+);
+
+
+
+
+
+
